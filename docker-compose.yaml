@@ -12,7 +12,7 @@ services:
         ports:
             - "8000:80"
         volumes:
-            - ./app:/var/app/
+            - ./app/public:/var/app/public
             - ./docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
         depends_on:
             - service-php74

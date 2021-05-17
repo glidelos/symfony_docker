@@ -1,0 +1,72 @@
+
+###> symfony/framework-bundle ###
+/app/.env.local
+/app/.env.local.php
+/app/.env.*.local
+/app/.env
+/app/config/secrets/prod/prod.decrypt.private.php
+/app/public/bundles/
+/app/var/
+/app/vendor/
+###< symfony/framework-bundle ###
+
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,symfony
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,symfony
+
+# Email spool folder
+/app/app/spool/*
+
+# Logs (Symfony4)
+/app/var/log/*
+!app/var/log/.gitkeep
+
+# Parameters
+/app/app/config/parameters.yml
+/app/app/config/parameters.ini
+
+# Managed by Composer
+/app/app/bootstrap.php.cache
+/app/var/bootstrap.php.cache
+/app/bin/*
+!app/bin/console
+!app/bin/symfony_requirements
+/app/vendor/
+
+# Assets and user uploads
+/app/web/bundles/
+/app/web/uploads/
+
+# PHPUnit
+/app/app/phpunit.xml
+/app/phpunit.xml
+
+# Build data
+/app/build/
+
+# Composer PHAR
+/app/composer.phar
+
+# Backup entities generated with doctrine:generate:entities command
+**/Entity/*~
+
+# Embedded web-server pid file
+/app/.web-server-pid
+
+### Symfony Patch ###
+/app/web/css/
+/app/web/js/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,symfony
